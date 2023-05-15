@@ -1,0 +1,72 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title style="text-align: center;">
+      NUTRILIFE VIVE SALUDABLE
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+
+  <div style="padding-left: 2%; padding-right: 2%; background-color: greenyellow; " >
+<br>
+<ion-list >
+  <H1 style="text-align: center;">RUTINA DE EJERCICIOS</H1>
+  <ion-item *ngFor="let p of Personas" >
+    
+    <ion-card style="background-color: black; width: 300px;">
+      <img alt="{{p.foto}}" src="{{p.foto}}" style="width: 100%; height: auto;">
+    
+    <ion-label><h1 style="color: white;">&nbsp;{{p.nombre_P}}</h1></ion-label>
+    <br>
+    <ion-label style="color: white;">&nbsp;&nbsp;{{p.Desc}}</ion-label>
+    <br>
+    <ion-label style="color: white;">&nbsp;&nbsp;{{p.repeticion}} </ion-label>
+    <br>
+    <ion-label style="color: white;">&nbsp;&nbsp;{{p.tiempo}}</ion-label>
+    <br>
+
+  </ion-card>
+  </ion-item>
+
+</ion-list>
+
+<ion-list>
+  <H1 style="text-align: center;">COMIDA SALUDABLE</H1>
+
+  <ion-item *ngFor="let c of Comida" >
+    
+    <ion-card style="background-color: black; width: 300px;">
+      <img alt="{{c.foto2}}" src="{{c.foto2}}" style="width: 100%; height: auto;">
+      <ion-label><h1 style="color: white;">&nbsp;{{c.nomP}}</h1></ion-label>
+      <br>
+      <ion-label style="color: white;">&nbsp;&nbsp;{{c.Calorias}}</ion-label>
+      <br>
+      <ion-label style="color: white;">&nbsp;&nbsp;{{c.Ing1}} </ion-label>
+      <br>
+      <ion-label style="color: white;">&nbsp;&nbsp;{{c.Ing2}}</ion-label>
+      <br>
+      <ion-label style="color: white;">&nbsp;&nbsp;{{c.Ing3}}</ion-label>
+      <br>
+      <ion-label style="color: white;">&nbsp;&nbsp;{{c.Ing4}} </ion-label>
+      <br>
+      <ion-label style="color: white;">&nbsp;&nbsp;{{c.Ing5}}</ion-label>
+      <br>
+      <br>
+      <ion-label style="color: white;">&nbsp;&nbsp;{{c.Ing6}}</ion-label>
+      <br>
+      <br>
+      <ion-label style="color: white;">&nbsp;&nbsp;{{c.Ing7}}</ion-label>
+      <br>
+      <br>
+      <ion-label style="color: white;">&nbsp;&nbsp;{{c.Ing8}}</ion-label>
+      <br>
+
+  </ion-card>
+  </ion-item>
+</ion-list>
+</div>
+
+<br><br><br>
+
+</ion-content>
